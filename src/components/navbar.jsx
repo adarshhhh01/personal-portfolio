@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <div>
          <motion.nav
@@ -27,4 +27,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar
