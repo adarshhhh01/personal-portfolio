@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import resume from '../assets/resume/Resume.pdf';
 const Footer = () => {
   return (
     <motion.footer
@@ -21,9 +21,9 @@ const Footer = () => {
         <div>
           <h3 className="text-sm font-semibold mb-5">Useful Link</h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white transition">Home</li>
-            <li className="hover:text-white transition">Resume</li>
-            <li className="hover:text-white transition">Lets talk</li>
+            <li className="hover:text-white transition"><a href="#home">Home</a></li>
+            <li className="hover:text-white transition"><a href={resume}  target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li className="hover:text-white transition"><a href="#contact">Lets talk</a></li>
             <li className="hover:text-white transition"><a href="https://github.com/adarshhhh01">Github</a></li>
           </ul>
         </div>
@@ -32,10 +32,10 @@ const Footer = () => {
         <div>
           <h3 className="text-sm font-semibold mb-5">Useful Link</h3>
           <ul className="space-y-2 text-sm">
-            <li className="hover:text-white transition"><a href="#About">About</a></li>
-            <li className="hover:text-white transition"><a href="#Services">Services</a></li>
-            <li className="hover:text-white transition"><a href="#Projects">Projects</a></li>
-            <li className="hover:text-white transition"><a href="#Contact">Contact</a></li>
+            <li className="hover:text-white transition"><a href="#about">About</a></li>
+            <li className="hover:text-white transition"><a href="#services">Services</a></li>
+            <li className="hover:text-white transition"><a href="#projects">Projects</a></li>
+            <li className="hover:text-white transition"><a href="#contact">Contact</a></li>
           </ul>
         </div>
 

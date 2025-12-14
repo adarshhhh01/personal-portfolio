@@ -4,13 +4,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base:'/personal-Portfolio/', 
   plugins: [react(),tailwindcss(),],
-  theme: {
-    extend: {
-      fontFamily: {
-        custom: ['Lavishly', 'sans-serif'],
-      },
-    },
-  },
 })

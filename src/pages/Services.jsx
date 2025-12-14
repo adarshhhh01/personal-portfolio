@@ -84,19 +84,19 @@ const Services = () => {
             }}
           >
             <div className="relative max-w-sm">
-              <div className="absolute -top-6 -right-30 grid grid-cols-3 gap-2 opacity-20">
-                <div className="h-30 w-30 bg-gray-700"></div>
-                <div className="h-30 w-30 bg-gray-800"></div>
-                <div className="h-30 w-30 bg-gray-700"></div>
-                <div className="h-30 w-30 bg-gray-800"></div>
-                <div className="h-30 w-30 bg-gray-700"></div>
-                <div className="h-30 w-30 bg-gray-800"></div>
+              <div className="absolute -top-6 -right-[30%] grid grid-cols-3 gap-2 opacity-20">
+                <div className="h-[30px] w-[30px] bg-gray-700"></div>
+                <div className="h-[30px] w-[30px] bg-gray-800"></div>
+                <div className="h-[30px] w-[30px] bg-gray-700"></div>
+                <div className="h-[30px] w-[30px] bg-gray-800"></div>
+                <div className="h-[30px] w-[30px] bg-gray-700"></div>
+                <div className="h-[30px] w-[30px] bg-gray-800"></div>
               </div>
 
               <div className="absolute -left-16 bottom-4 h-60 w-60 rounded-full border border-orange-500/30"></div>
               <div className="absolute -right-16 top-8 h-60 w-60 rounded-full border border-orange-500/40"></div>
 
-              <div className="absolute top-15 right-15 flex gap-1">
+              <div className="absolute top-[15px] right-[15px] flex gap-1">
                 <span className="h-6 w-1 rounded-full bg-orange-400 rotate-6"></span>
                 <span className="h-6 w-1 rounded-full bg-orange-400 -rotate-6"></span>
               </div>
@@ -109,7 +109,7 @@ const Services = () => {
               <img
                 src={img4}
                 alt="Profile"
-                className="relative z-10 w-200"
+                className="relative z-10 w-[200%]"
               />
             </div>
           </motion.div>
