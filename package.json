@@ -22,7 +22,7 @@
     "@tailwindcss/postcss": "^4.1.18",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-    "@vitejs/plugin-react": "^5.1.1",
+    "@vitejs/plugin-react": "^5.1.2",
     "autoprefixer": "^10.4.22",
     "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.37.5",
@@ -31,5 +31,18 @@
     "globals": "^16.5.0",
     "postcss": "^8.5.6",
     "vite": "^5.4.0"
-  }
+  },
+  "description": "This is the source code for my personal portfolio website, designed to showcase my skills, projects, and professional journey as a full-stack developer. The site is built with modern web technologies and features a clean, interactive, and animated user interface.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarshhhh01/personal-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarshhhh01/personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/adarshhhh01/personal-Portfolio#readme"
 }

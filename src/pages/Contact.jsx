@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Phone, Camera, Link, Code  } from 'lucide-react'
+import { Phone, Camera, Link, Code } from 'lucide-react'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,11 +21,20 @@ const Contact = () => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // API logic can be added later
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
+    try {
+      const res = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
 
+      if (!res.ok) {
+        throw new Error('Failed to submit form')
+      }
+
+      setIsSubmitted(true)
       setFormData({
         fullName: '',
         email: '',
@@ -33,7 +42,12 @@ const Contact = () => {
       })
 
       setTimeout(() => setIsSubmitted(false), 2000)
-    }, 1000)
+    } catch (error) {
+      console.error(error)
+      alert('Something went wrong. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -65,7 +79,6 @@ const Contact = () => {
             </motion.h1>
 
             <motion.form onSubmit={handleSubmit} className='space-y-8 max-w-xl'>
-              {/* Full Name */}
               <div className='space-y-2'>
                 <label className='text-sm uppercase tracking-wide text-[#11160f]/80'>
                   Full name
@@ -80,7 +93,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Email */}
               <div className='space-y-2'>
                 <label className='text-sm uppercase tracking-wide text-[#11160f]/80'>
                   Email address
@@ -95,7 +107,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Message */}
               <div className='space-y-2'>
                 <label className='text-sm uppercase tracking-wide text-[#11160f]/80'>
                   Message
@@ -110,7 +121,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Submit Button */}
               <button
                 type='submit'
                 disabled={isSubmitting}
@@ -126,8 +136,7 @@ const Contact = () => {
           </div>
         </motion.section>
 
-        {/* RIGHT CONTACT CARD */}
-        <motion.aside
+       <motion.aside
           initial={{ x: 80, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
@@ -219,6 +228,7 @@ const Contact = () => {
             </div>
           </div>
         </motion.aside>
+        {/* Your right-side JSX stays exactly as you wrote it */}
       </motion.div>
     </div>
   )
