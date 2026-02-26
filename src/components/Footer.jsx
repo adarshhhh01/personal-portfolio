@@ -13,7 +13,7 @@ const Footer = () => {
 
         {/* Logo + Copyright */}
         <div>
-          <h1 className="text-xl font-bold mb-4">Miros</h1>
+          <h1 className="text-xl font-bold mb-4">Adarsh Namdeo</h1>
           <p className="text-sm opacity-60">Copyright © 2024</p>
         </div>
 
