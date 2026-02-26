@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
-import Resume from "../assets/resume/Resume.pdf"
+import Resume from "../assets/resume/Adarshs_Resume.pdf"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)

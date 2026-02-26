@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import resume from '../assets/resume/Resume.pdf';
+import resume from '../assets/resume/Adarshs_Resume.pdf';
 const Footer = () => {
   return (
     <motion.footer
